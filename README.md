@@ -33,8 +33,12 @@ All git related learning is added as markdown files for this project.
 ## Git configurations
 - Has 3 configurations System, user, Project
 
-Type Of Config | System
------------------------------------------- | -------------------------------------------------------------------------------------------
-Configuration file Location | *Linux* - /etc/gitconfig, *Windows* - Program Files\Git\etc\gitconfig
+## System Configuration
+
+Description | **Linux** | **Windows**
+-------------------------------------------------- | --------------------------------------------- | ---------------------------------------
+Configuration file Location | /etc/gitconfig | Program Files\Git\etc\gitconfig
+
+
 
 
