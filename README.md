@@ -56,7 +56,7 @@ Command to update config | git config | git config
 - Email ``` git config --global user.email "your-email-address" ```
 - Core editor ``` git config --global core.editor "notepad.exe" ``` //will set the default editor to edit as notepad
 - To read this configurations ``` git config --list ```
-- Colour ui ``` git config --global colour.ui true ``` // by default this will be true
+- Colour ui ``` git config --global colour.ui true ``` // by default this will be true 
 
 > To exit out of list use shift+q or Ctrl+q and C to exit out of running task
 
