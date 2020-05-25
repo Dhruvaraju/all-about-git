@@ -31,13 +31,23 @@ All git related learning is added as markdown files for this project.
 - If the installation was successful git will give you the version number.
 
 ## Git configurations
-- Has 3 configurations System, user, Project
+- Has 3 configurations System, User, Project
 
-## System Configuration
+### System Configuration
+Description | **Linux** | **Windows** |
+-------------------------------------------------- | --------------------------------------------- | --------------------------------------- |
+Configuration file Location | /etc/gitconfig | Program Files\Git\etc\gitconfig |
+Command to update config | git config --system ||
 
-Description | **Linux** | **Windows**
--------------------------------------------------- | --------------------------------------------- | ---------------------------------------
-Configuration file Location | /etc/gitconfig | Program Files\Git\etc\gitconfig
+### User Configuration
+Description | **Linux** | **Windows** |
+-------------------------------------------------- | --------------------------------------------- | --------------------------------------- |
+Configuration file Location | ~/gitconfig | $HOME\gitconfig |
+
+### Project Configuration
+Description | **Linux** | **Windows** |
+-------------------------------------------------- | --------------------------------------------- | --------------------------------------- |
+Configuration file Location | <<Project-Name>>/.git/config ||
 
 
 
