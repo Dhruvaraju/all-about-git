@@ -54,7 +54,7 @@ Command to update config | git config | git config
 ### general configurations to set
 - Username can be set with ``` git config --global user.name "your-user-name" ```
 - Email ``` git config --global user.email "your-email-address" ```
-- Core editor ``` git config --global core.editor "notepad.exe --wait" ``` //will set the default editor to edit as notepad
+- Core editor ``` git config --global core.editor "notepad.exe" ``` //will set the default editor to edit as notepad
 - To read this configurations ``` git config --list ```
 - Colour ui ``` git config --global colour.ui true ``` // by default this will be true
 
