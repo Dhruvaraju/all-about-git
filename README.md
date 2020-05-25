@@ -34,20 +34,31 @@ All git related learning is added as markdown files for this project.
 - Has 3 configurations System, User, Project
 
 ### System Configuration
-Description | **Linux** | **Windows** |
--------------------------------------------------- | --------------------------------------------- | --------------------------------------- |
+Description | **Linux** | **Windows**
+-------------------------------------------------- | --------------------------------------------- | ---------------------------------------
 Configuration file Location | /etc/gitconfig | Program Files\Git\etc\gitconfig |
-Command to update config | git config --system ||
+Command to update config | git config --system | git config --system  |
 
 ### User Configuration
-Description | **Linux** | **Windows** |
--------------------------------------------------- | --------------------------------------------- | --------------------------------------- |
-Configuration file Location | ~/gitconfig | $HOME\gitconfig |
+Description | **Linux** | **Windows**
+-------------------------------------------------- | --------------------------------------------- | ---------------------------------------
+Configuration file Location | ~/gitconfig | $HOME\gitconfig 
+Command to update config | git config --global | git config --global  |
 
 ### Project Configuration
-Description | **Linux** | **Windows** |
--------------------------------------------------- | --------------------------------------------- | --------------------------------------- |
-Configuration file Location | <<Project-Name>>/.git/config ||
+Description | **Linux** | **Windows**
+-------------------------------------------------- | --------------------------------------------- | ---------------------------------------
+Configuration file Location | Project-Name/.git/config | Project-Name/.git/config
+Command to update config | git config | git config
+
+### general configurations to set
+- Username can be set with ``` git config --global user.name "your-user-name" ```
+- Email ``` git config --global user.email "your-email-address" ```
+- Core editor ``` git config --global core.editor "notepad.exe --wait" ``` //will set the default editor to edit as notepad
+- To read this configurations ``` git config --list ```
+- Colour ui ``` git config --global colour.ui true ``` // by default this will be true
+
+> To exit out of list use shift+q or Ctrl+q and C to exit out of running task
 
 
 
