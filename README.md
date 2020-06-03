@@ -60,6 +60,58 @@ Command to update config | git config | git config
 
 > To exit out of list use shift+q or Ctrl+q and C to exit out of running task
 
+> Vi editor, to start editing press s, to exit out of Vi press **esc** then **:wq** and click enter
 
+> Auto completion is a built in function for windows for mac and linux it need to be updated, the scripts for that are available in [git-autoComplete](https://github.com/git/git/tree/master/contrib/completion)
+
+## Help in git
+- use ``` git help ``` to know about the commands that can be used in git.
+
+## Initiating a folder as git repository(repo)
+- Create a folder and navigate to the folder in command prompt
+- ``` git init ``` will add the folder to git version control, files ., .., .git will be generated, which will be hidden by default.
+- use Dir to list those files in windows, or ls in mac or linux
+- All the tracking information will be available in .git folder.
+
+## Adding a file to git repo
+- Create a new text file in the folder and save it.
+- To add this file to repository you we need run the command ``` git add . ```
+    - **git add** will add the files or folders for tracking
+    - **.** is to say that track all the changes made in a folder (files, folders, sub-folders .. everything).
+- Once added to permanently save this changes you need to commit the changes using ``` git commit -m "Message for committing" ```
+- example ``` git commit -m "Initial Version" ```
+> We repeat this in git, make changes => add => commit
+
+### Convention for writing commit messages:
+- Single line summary less than 50, make sure not to exceed 72 char. Clear and descriptive.
+- Optionally we can add a blank line with additional description.
+- Messages should be in present tense like. "Fix for the issue:2345" instead of "fixed 2345".
+- User asterisks or hyphens, add tracking numbers like the example above.
+- Create shorthand for the type of files delivered, or bug fix. eg: \[componentTest,CSS\], Fix#, Story#
+
+## Viewing commit logs
+- Use command ``` git log ``` to see all the information about git commits made
+- git log will give the following info
+
+```s
+commit 8bf158bae06b7457b72b891b37ea73515303796b (origin/master, origin/HEAD)
+Author: UserName <User-Email>
+Date:   Mon May 25 11:48:17 2020 +0530
+
+    Initial Version
+
+// '8bf158bae06b7457b72b891b37ea73515303796b' is the unique commit number.
+// 'Initial Version' is the message we added for this commit.
+```
+- some of the switches that can be used are:
+    - Restrict number of commit logs by using ``` git log -n 5 ```
+    - by time (Date in YYYY-MM-DD format)
+        - git log --since=2020-05-10
+        - git log --until=2020-08-10
+    - by Author ``` git log --author="dexter" ```
+    - by string ```git log --grep="test" ``` // will get all the commits with word 'init' in commit message.
+    
+> To exit out of list use shift+q or Ctrl+q and C to exit out of running task
+> Vi editor, to start editing press s, to exit out of Vi press **esc** then **:wq** and click enter
 
 
